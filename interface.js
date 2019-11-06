@@ -1,4 +1,6 @@
 $(document).ready(function() {
+  var crypto = new Crypto();
+
   function displayCrypto1(coin) {
     var url = "https://api.coingecko.com/api/v3/simple/";
     var coinID = "price?ids=" + coin;

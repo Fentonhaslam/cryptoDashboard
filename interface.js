@@ -22,7 +22,7 @@ $(document).ready(function() {
     var coinID = "price?ids=" + coin;
     var currency = "&vs_currencies=usd";
     $.get(url + coinID + currency, function(data) {
-      console.log(data[coin].usd);
+      console.log(data);
       $("#bitcoin").text(data[coin].usd);
     });
   }
